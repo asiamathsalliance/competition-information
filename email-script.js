@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             message : document.getElementById("message").value,
             phone : document.getElementById("phone").value
         }
-        alert("send emailed!");
+        emailjs.send("service_8pruku7","template_gjpyvxe",parms)
     }
 
 
