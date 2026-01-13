@@ -5,7 +5,7 @@
     document.getElementById('link-about').addEventListener('click', (e) => {
       e.preventDefault();
       const section = document.getElementById('about');
-      const top = section.getBoundingClientRect().top + window.pageYOffset - 80;
+      const top = section.getBoundingClientRect().top + window.pageYOffset - 130;
       window.scrollTo({ top: top, behavior: 'smooth' });
     });
 

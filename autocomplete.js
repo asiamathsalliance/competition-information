@@ -1,6 +1,6 @@
 const sectionMap = {
   "Thai International Mathematical Olympiad (TIMO) Preliminary Round": "timo-pre",
-  "TIMO Finals": "timo-finals",
+  "Thai International Mathematical Olympiad (TIMO) Finals": "timo-finals",
   "Big Bay Competition Preliminary Round": "bigbay-prelim",
   "Big Bay Competition Finals": "bigbay-finals",
   "Hong Kong International Mathematical Olympiad (HKIMO) Preliminary Round": "hkimo-prelim",
@@ -11,7 +11,7 @@ const sectionMap = {
   "AMC 10/12B": "amc1012b",
   "AIME II": "aime2",
   "Global English Olympiad of S.E.A (GELOSEA) Heats": "gelosea-heats",
-  "GELOSEA Finals-Singapore": "gelosea-finals",
+  "GELOSEA Finals": "gelosea-finals",
   "International Math Olympiad of S.E.A (IMOCSEA)": "imocsea",
   "International Science Olympiad of S.E.A (IOSCEA)": "ioscea",
   "HXC Cup Preliminary Round": "hxc-prelim",
@@ -103,4 +103,30 @@ document.addEventListener("click", (event) => {
     resultBox.style.display = "none";
     searchBox.classList.remove("active");
   }
+});
+
+const searchButton = document.getElementById("search-button");
+
+searchButton.addEventListener("click", () => {
+    const input = inputBox.value.trim();
+    if (!input) return;
+
+    // Find the best matching key in sectionMap
+    const keys = Object.keys(sectionMap);
+    const match = keys.find(key => key.toLowerCase().includes(input.toLowerCase()));
+
+    if (match) {
+        const sectionId = sectionMap[match];
+        const section = document.getElementById(sectionId);
+        if (section) {
+            const headerOffset = 70; // adjust for sticky header
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    }
 });

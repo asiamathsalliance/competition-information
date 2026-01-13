@@ -14,7 +14,17 @@ body {
   color: #1f2933;
   background-color: #f9fafb;
 }
- 
+
+#enquiry-form {
+  height: 70vh;
+}
+#search-button {
+  transition: 0.2s ease;
+}
+ #search-button:hover {
+  translate: translateY(-3px);
+  transform: scale(1.05);
+}
 
 /* HERO SECTION */
 #hero {
@@ -101,7 +111,7 @@ main {
   max-width: 600px;
   padding: 3rem;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .content h2 {
@@ -341,7 +351,7 @@ main {
   color: black;
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   max-width: 300px;
   flex-shrink: 0;
   display: flex;
@@ -548,6 +558,8 @@ main {
   cursor: pointer;
 }
 
+
+
 .contact-icons a:hover {
   color: #2563eb;
   transform: translateY(-2px);
@@ -561,7 +573,6 @@ main {
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   background: white;
   padding: 2rem;
   border-radius: 12px;
@@ -570,6 +581,8 @@ main {
 
 .contact-form label {
   font-weight: 600;
+  margin-bottom: 0;
+  margin-bottom: 0.25rem;
 }
 
 .contact-form input,
@@ -579,13 +592,14 @@ main {
   border-radius: 6px;
   font-size: 1rem;
   font-family: Arial, sans-serif;
+  margin-bottom: 1rem;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #2563eb;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2);
 }
 
 .contact-form button {
@@ -618,6 +632,7 @@ main {
     justify-content: center;
   }
 }
+
 
 
 
@@ -729,6 +744,12 @@ button .fa-solid {
   mask-composite: intersect;
 }
 
+
+
+
+#message {
+    resize: none; /* disables resizing */
+  }
 
 
 

@@ -8,7 +8,12 @@
   pointer-events: none;
   z-index: 1;
   background-color: transparent;
+
+
+
 }
+
+
 
 .floating-image {
   width: 100%;
@@ -23,12 +28,12 @@
 #image2 { top: 50vh; left: 7vw; width: 15vw; 
   height: 15vw;}
 
-#image3 { top: 237vh; left: 3vw; }
+#image3 { top: 237vh; left: 5vw; }
 
-#image4 {top: 325vh; right: 5vw; }
+#image4 {top: 325vh; right: 5vw; width: 18vw;}
 
 #image5 {
-    top: 400vh; 
+    top: 480vh; 
     left: 7vw;
 }
 
@@ -40,8 +45,8 @@
 }
 
 #image7 {
-    top: 720vh; 
-    left: 4.5vw;
+    top: 723vh; 
+    left: 5vw;
     width: 12vw;
     height: 12vw;
 }
@@ -68,7 +73,7 @@
 }
 
 #image11 {
-    top: 1123vh; 
+    top: 1201vh; 
     left: 35vw;
     width: 8vw;
     height: 8vw;
@@ -87,9 +92,56 @@
     left: 4vw;
     width: 20vw;
     height: 7vw;
-    z-index: 999;
 }
 
+#image14 {
+    top: 1585vh; 
+    left: 52vw;
+    width: 17vw;
+    height: 17vw;
+}
+
+#image15 {
+    top: 1763vh; 
+    left: 5vw;
+    width: 23vw;
+    height: 7vw;
+}
+
+#image16 {
+    top: 1910vh; 
+    right: 5vw;
+    width: 20vw;
+    height: 20vw;
+}   
+
+#image17 {
+    top: 2073vh; 
+    left: 3vw;
+    width: 18vw;
+    height: 18vw;
+}   
+
+#image18 {
+    top: 2230vh; 
+    right: 4vw;
+    width: 15vw;
+    height: 15vw;
+}
+
+#image19 {
+    top: 2405vh; 
+    left: 27vw;
+    width: 20vw;
+    height: 15vw;
+}
+
+#image21 {
+    top: 2644vh; 
+    right: 5vw;
+    width: 16vw;
+    height: 7vw;
+}
 
 
 
