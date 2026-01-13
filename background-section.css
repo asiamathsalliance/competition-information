@@ -1,0 +1,95 @@
+.floating-image-wrapper {
+  position: absolute;
+  width: 10vw;   /* width scales with viewport width */
+  height: 10vw;  /* keep square shape */
+  border: 2px solid black;
+  padding: 0.5vw; /* gap between image and outline */
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.floating-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Position each image with vh/vw */
+#image1 { top: 15vh; left: 2vw; width: 15vw; 
+  height: 15vw;}
+#image2 { top: 50vh; left: 7vw; width: 15vw; 
+  height: 15vw;}
+
+#image3 { top: 237vh; left: 3vw; }
+
+#image4 {top: 325vh; right: 5vw; }
+
+#image5 {
+    top: 400vh; 
+    left: 7vw;
+}
+
+#image6 {
+    top: 562vh; 
+    right: 5vw;
+    width: 18vw;
+    height: 12vw;
+}
+
+#image7 {
+    top: 720vh; 
+    left: 4.5vw;
+    width: 12vw;
+    height: 12vw;
+}
+
+#image8 {
+    top: 803.5vh; 
+    right: 20vw;
+    width: 20vw;
+    height: 8vw;
+}
+
+#image9 {
+    top: 963vh; 
+    left: 3vw;
+    width: 18vw;
+    height: 7vw;
+}
+
+#image10 {
+    top: 1043vh; 
+    right: 5vw;
+    width: 15vw;
+    height: 8vw;
+}
+
+#image11 {
+    top: 1123vh; 
+    left: 35vw;
+    width: 8vw;
+    height: 8vw;
+    z-index:999;
+}
+
+#image12 {
+    top: 1277vh; 
+    right: -1vw;
+    width: 15vw;
+    height: 12vw;
+}
+
+#image13 {
+    top: 1443vh; 
+    left: 4vw;
+    width: 20vw;
+    height: 7vw;
+    z-index: 999;
+}
+
+
+
+
