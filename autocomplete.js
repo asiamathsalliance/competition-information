@@ -1,9 +1,9 @@
 const sectionMap = {
   "Thai International Mathematical Olympiad (TIMO) Preliminary Round": "timo-pre",
   "Thai International Mathematical Olympiad (TIMO) Finals": "timo-finals",
-  "Big Bay Competition Preliminary Round": "bigbay-prelim",
+  "Big Bay Competition Preliminary Round": "bigbay-pre",
   "Big Bay Competition Finals": "bigbay-finals",
-  "Hong Kong International Mathematical Olympiad (HKIMO) Preliminary Round": "hkimo-prelim",
+  "Hong Kong International Mathematical Olympiad (HKIMO) Preliminary Round": "hkimo-pre",
   "HKIMO Finals": "hkimo-finals",
   "World International Mathematical Olympiad (WIMO) Finals": "wimo-finals",
   "American Mathematics Competition (AMC 8)": "amc8",
