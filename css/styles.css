@@ -251,6 +251,14 @@ main {
 
 .nav-search-btn {
   color: black !important;
+  transition: 
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-search-btn:hover {
+  color: #2563eb !important;
+  transform: translateY(-3px) scale(1.05);
 }
 
 /* HAMBURGER */
