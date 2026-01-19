@@ -1,0 +1,98 @@
+.section-header {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 1.25rem;
+  opacity: 0.6;
+}
+
+.section-header::before,
+.section-header::after {
+  content: "";
+  width: 7vw;
+  display: block;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.4;
+}
+
+#about-header {
+  margin-top: 1rem;
+}
+
+.section-header::before {
+  margin-right: 1rem;
+}
+
+.section-header::after {
+  margin-left: 1rem;
+}
+
+.section-header span {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.content-text {
+  font-size: 1rem;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 0.7rem !important;
+}
+
+.format-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.format-item {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;           /* make each item a flex container */
+    flex-direction: column;  /* stack strong + p vertically */
+    align-items: center;     /* center horizontally */
+    justify-content: center; /* optional: center vertically if needed */
+}
+
+.format-item strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.format-item p {
+    color: #4b5563 !important;
+    font-size: 1rem;
+}
+
+
+.content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.content-header h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.content-divider {
+  margin: 0.75rem auto 0;
+}

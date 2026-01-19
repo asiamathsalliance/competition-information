@@ -83,7 +83,7 @@ function display(result) {
       if (sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
-          const headerOffset = 70; // adjust this to match your header height
+          const headerOffset = 40; // adjust this to match your header height
           const elementPosition = section.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -119,7 +119,7 @@ searchButton.addEventListener("click", () => {
         const sectionId = sectionMap[match];
         const section = document.getElementById(sectionId);
         if (section) {
-            const headerOffset = 70; // adjust for sticky header
+            const headerOffset = 40; // adjust for sticky header
             const elementPosition = section.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 

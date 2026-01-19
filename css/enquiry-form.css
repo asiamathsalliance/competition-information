@@ -1,0 +1,62 @@
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #cecccc;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  animation: spin 1.2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#submit-another {
+    display: inline-block;
+    margin-top: 1rem;
+    color: blue;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease; /* smooth transition */
+  }
+
+#submit-another:hover {
+    scale: (1.05);
+    transform: translateY(-3px);       /* lift slightly */
+    color: #00008b;                     /* darker blue */
+}
+
+/* Fade animations */
+.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.checkmark {
+  margin-left: 0.5rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.checkmark.show {
+  opacity: 1;
+  transform: scale(1);
+}
