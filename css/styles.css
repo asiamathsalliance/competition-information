@@ -121,6 +121,26 @@ main {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+#bigbay-pre .content {
+  max-width: 650px;
+}
+
+#bigbay-pre h2 {
+  font-size: 2.2rem;
+}
+
+#hxc-prelim h2 {
+  font-size: 2.2rem;
+}
+
+#teeneagle-math h2 {
+  font-size: 2.2rem;
+}
+
+#teeneagle-english h2 {
+  font-size: 2.2rem;
+}
+
 .content h2 {
   font-size: 2.4rem;
   font-weight: 700;
@@ -306,16 +326,16 @@ main {
   border-radius: 2px;
   border: none;
   cursor: pointer;
-  background: #2563eb;
+  background: rgb(255, 140, 0) !important;
   color: white;
   transition: all 0.25s ease;
   flex-shrink: 0;
 }
 
 .update-button:hover {
-  background: #1e40af;
+  background: #dc7106 !important; /* slightly darker orange for hover */
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 8px 20px rgba(255, 140, 0, 0.35) !important; /* orange-tinted shadow */
 }
 
 .button-group {
@@ -438,12 +458,31 @@ main {
 
 
 .content-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;  /* left-align header and line; change to center if you want */
-  gap: 0.1rem;              /* smaller gap between header and line */
-  margin-bottom: 0.5rem;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 1rem;
 }
+
+.content-header {
+  display: flex;
+  justify-content: center; /* center the row in the container */
+}
+
+.header-row {
+  display: flex;           /* arrange h2 and logo side by side */
+  align-items: center;     /* vertical alignment */
+  gap: 1.5rem;               /* space between h2 and logo */
+}
+
+.header-row h2 {
+  margin: 0;
+}
+
+.header-logo {
+  height: 70px;
+}
+
 
 /* LOGO */
 .about-logo img {
@@ -539,7 +578,7 @@ main {
 #about .about-logo img {
   width: 150px;   /* adjust size here */
   height: auto;
-  margin-right: 5.5rem;
+  margin-right: 6rem;
   margin-bottom: 1rem;
 }
 
@@ -549,7 +588,7 @@ main {
   padding: 2.5rem 3rem;
   flex-direction: row;      /* horizontal layout */
   align-items: center;      /* vertically center them */
-  gap: 5.3rem;                /* spacing between text and logo */
+  gap: 5.5rem;                /* spacing between text and logo */
 }
 
 #about .about-wrapper {
