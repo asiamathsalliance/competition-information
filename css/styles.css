@@ -21,11 +21,10 @@ body {
   height: 70vh;
 }
 #search-button {
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
  #search-button:hover {
-  translate: translateY(-3px);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* HERO SECTION */
@@ -453,7 +452,7 @@ main {
   height: 4px;             /* thickness */
   background-color: orange;
   border-radius: 0px;
-  margin: 0.3rem 0 0.7rem 0; /* top/bottom spacing: closer to header, more space before paragraph */
+  margin: 0.3rem 0 1rem 0 !important; /* top/bottom spacing: closer to header, more space before paragraph */
 }
 
 
@@ -461,7 +460,7 @@ main {
   display: flex; 
   align-items: center; 
   justify-content: center; 
-  gap: 1rem;
+  gap: 0.3rem;
 }
 
 .content-header {
@@ -618,7 +617,7 @@ main {
 .contact-section {
   padding: 5rem 2rem;
   background-color: #f9fafb;
-  font-family: Arial, sans-serif; /* Default font */
+  font-family: 'Source Sans 3', system-ui, sans-serif;
 }
 
 .contact-wrapper {
@@ -640,6 +639,7 @@ main {
 }
 
 .contact-header h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -653,6 +653,7 @@ main {
 }
 
 .contact-info p {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
   font-size: 1.05rem;
   margin-bottom: 1rem;
 }
@@ -671,7 +672,19 @@ main {
   cursor: pointer;
 }
 
+#enquiry-form input, textarea, select {
+  font-family: 'Source Sans 3', system-ui, sans-serif !important;
+}
 
+input:focus, textarea:focus, select:focus {
+  font-family: 'Source Sans 3', system-ui, sans-serif !important;
+}
+
+
+input::placeholder, textarea::placeholder {
+  font-family: 'Source Sans 3', system-ui, sans-serif !important;
+  color: #797979;
+}
 
 .contact-icons a:hover {
   color: #2563eb;
@@ -680,10 +693,12 @@ main {
 
 /* RIGHT CONTACT FORM */
 .contact-form {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
   flex: 1 1 400px;
 }
 
 .contact-form form {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
   display: flex;
   flex-direction: column;
   background: white;
@@ -693,13 +708,16 @@ main {
 }
 
 .contact-form label {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
   font-weight: 600;
+  font-size: 1rem;
   margin-bottom: 0;
   margin-bottom: 0.25rem;
 }
 
 .contact-form input,
 .contact-form textarea {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
   padding: 0.75rem 1rem;
   border: 1px solid #d1d5db;
   border-radius: 6px;
@@ -710,6 +728,7 @@ main {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
   outline: none;
   border-color: #2563eb;
   box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2);
@@ -725,6 +744,14 @@ main {
   background: #2563eb;
   color: white;
   transition: all 0.25s ease;
+}
+
+.contact-form::placeholder {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+}
+
+#enquiry-form ::placeholder {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
 }
 
 .contact-form button:hover {

@@ -1,0 +1,59 @@
+/* ------------------- Initial hidden states ------------------- */
+
+/* Left side section */
+.competition.left .image-box {
+  opacity: 0;
+  transform: translateX(70px); /* slide from left */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.competition.left .content {
+  opacity: 0;
+  transform: translateX(-70px); /* slide from right */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Right side section */
+.competition.right .image-box {
+  opacity: 0;
+  transform: translateX(-70px); /* slide from right */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.competition.right .content {
+  opacity: 0;
+  transform: translateX(70px); /* slide from left */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.competition.about-left .fade-up {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Keep parent centered */
+.competition.about-left {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center if needed */
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ------------------- Visible states ------------------- */
+
+/* Left and right sections animate children to center */
+.competition.left.visible .image-box,
+.competition.right.visible .image-box,
+.competition.left.visible .content,
+.competition.right.visible .content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.competition.about-left .fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
