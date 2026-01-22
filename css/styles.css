@@ -125,7 +125,15 @@ main {
 }
 
 #bigbay-pre h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
+}
+
+#bigbay-finals h2 {
+  font-size: 2rem;
+}
+
+#math-mastery h2 {
+  font-size: 2.1rem;
 }
 
 #hxc-prelim h2 {
@@ -133,11 +141,11 @@ main {
 }
 
 #teeneagle-math h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 #teeneagle-english h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .content h2 {

@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         buttonText.style.display = "none";
         spinner.style.display = "inline-block";
 
-        sendMail();
+        alert("nigger");
 
         // Simulate 3-second email sending
         setTimeout(() => {
@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         align-items: center;
                         min-height: 70vh;
                     ">
-                        <h2 style="text-align:center; font-weight:bold; margin-bottom:1rem; margin-top: 1rem; font-size: 1.7rem">
+                        <h2 style="text-align:center; font-family: 'Source Sans 3', system-ui, sans-serif; font-weight:bold; margin-bottom:1rem; margin-top: 1rem; font-size: 1.7rem">
                             Thank you for reaching out to us!
                         </h2>
-                        <p style="text-align:center; font-size:1.2rem; margin:0 0 1.5rem 0; max-width: 80%;">
+                        <p style="text-align:center; font-family: 'Source Sans 3', system-ui, sans-serif; font-size:1.15rem; margin:0 0 1.5rem 0; max-width: 83%;">
                             We have received your enquiry and will get back to you as soon as possible.
                         </p>
                         <a href="#contact" id="submit-another">Submit another enquiry!</a>
